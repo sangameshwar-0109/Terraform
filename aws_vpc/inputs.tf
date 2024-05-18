@@ -9,7 +9,7 @@ variable "vpc_cidr" {
   type    = string
   default = "10.100.0.0/16"
 }
-
+#####
 variable "web_cidr" {
   type    = string
   default = "10.100.0.0/24"
