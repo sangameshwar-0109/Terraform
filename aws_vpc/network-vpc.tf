@@ -19,7 +19,7 @@ resource "aws_subnet" "web" {
   depends_on = [aws_vpc.primary_network]
 
 }
-
+# my subnet
 resource "aws_subnet" "business" {
   cidr_block = var.business_cidr
   vpc_id     = aws_vpc.primary_network.id
