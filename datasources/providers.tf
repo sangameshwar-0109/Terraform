@@ -6,6 +6,14 @@ terraform {
     }
   }
   // required_version = "> 1.6.0"
+
+  backend "s3" {
+    bucket         = "sangutf"
+    key            = "example/modules"
+    region         = "us-west-2"
+    dynamodb_table = "sangus3"
+
+  }
 }
 
 provider "aws" {
